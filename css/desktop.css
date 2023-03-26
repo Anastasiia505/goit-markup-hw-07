@@ -58,13 +58,15 @@
   /* Footer  */
   .footer-container {
     gap: 0;
+    justify-content: space-between;
+    margin-left: 156px;
   }
-  .social-company {
-    margin-left: 120px;
-  }
+}
+.social-company {
+  margin-left: 120px;
+}
 
-  /* footer-form */
-  .footer-form {
-    margin-left: 80px;
-  }
+/* footer-form */
+.footer-form {
+  margin-left: 80px;
 }

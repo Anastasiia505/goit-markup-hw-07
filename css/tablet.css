@@ -39,9 +39,21 @@
     display: flex;
     flex-direction: row;
     column-gap: 24px;
-    row-gap: 0;
+    row-gap: 72px;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 108px;
   }
+  .footer-info {
+    text-align: left;
+  }
+  .footer-label {
+    text-align: left;
+  }
+  .social-company-title {
+    text-align: left;
+  }
+
   .subscribe-wrapper {
     flex-direction: row;
     column-gap: 24px;
