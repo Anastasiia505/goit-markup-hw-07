@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  /* Benefits */
+  .benefits-item {
+    width: 356px;
+  }
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+  }
+  /* Our Team */
+  .team-container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    margin-bottom: 64px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  /* customers */
+  .customers-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+  /* Footer  */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 0;
+    flex-wrap: wrap;
+  }
+  .subscribe-wrapper {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+}

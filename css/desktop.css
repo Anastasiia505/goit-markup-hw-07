@@ -1,0 +1,70 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  /* Benefits */
+  .benefits {
+    padding-top: var(--section-padding);
+  }
+  .benefits-item {
+    width: 264px;
+    margin-bottom: 0;
+  }
+  .benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .benefits-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-light-color);
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  .benefits-icon {
+    display: block;
+  }
+  /* work */
+  .work {
+    display: block;
+  }
+  .work-list {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  /* Our Team */
+
+  .team-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .team-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* Customers */
+  .customers {
+    padding-top: 130px;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  /* Footer  */
+  .footer-container {
+    gap: 0;
+  }
+  .social-company {
+    margin-left: 120px;
+  }
+
+  /* footer-form */
+  .footer-form {
+    margin-left: 80px;
+  }
+}
