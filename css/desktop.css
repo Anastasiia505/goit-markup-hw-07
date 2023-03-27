@@ -2,7 +2,32 @@
   .container {
     max-width: 1158px;
   }
+  /* Hero */
+  .hero {
+    padding: 188px 0;
+    height: 600px;
+    max-width: 1440px;
 
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-2x.jpg);
+    }
+  }
   /* Benefits */
   .benefits {
     padding-top: var(--section-padding);
@@ -52,21 +77,27 @@
   .customers {
     padding-top: 130px;
   }
+  .customers-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .customers-list {
     flex-wrap: nowrap;
   }
   /* Footer  */
   .footer-container {
     gap: 0;
-    justify-content: space-between;
-    margin-left: 156px;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
-}
-.social-company {
-  margin-left: 120px;
-}
 
-/* footer-form */
-.footer-form {
-  margin-left: 80px;
+  .social-company {
+    margin-left: 120px;
+  }
+
+  /* footer-form */
+  .footer-form {
+    margin-left: 80px;
+  }
 }

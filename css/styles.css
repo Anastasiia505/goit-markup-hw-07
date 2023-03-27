@@ -109,8 +109,13 @@ body {
 }
 
 /* -------header------ */
+.header-nav-wrap {
+  background-color: var(--secondary-color);
+}
 .header {
   border-bottom: 1px solid var(--accent-color);
+  width: 100%;
+  height: 100%;
 }
 
 .header-link:hover,
@@ -183,10 +188,10 @@ body {
 /*--------------- Hero-------------- */
 .hero {
   background-color: var(--basic-color);
-  padding: 188px 0;
+  padding: 112px 0;
   text-align: center;
-  height: 600px;
-  max-width: 1440px;
+  height: 432px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -194,14 +199,26 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-mobile.jpg);
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mobile-2x.jpg);
+  }
+}
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   color: var(--secondary-color);
-  width: 496px;
+  width: 320px;
   margin: 0 auto 48px auto;
 }
 
@@ -215,12 +232,6 @@ body {
 }
 
 /*--------------- benefits------------*/
-.benefits-list {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  column-gap: 24px; */
-}
 
 .benefits {
   padding-top: 96px;
@@ -436,6 +447,7 @@ body {
   align-items: center;
   row-gap: 16px;
 }
+
 .footer-label {
   color: var(--secondary-color);
   margin-bottom: 16px;

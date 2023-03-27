@@ -2,7 +2,34 @@
   .container {
     max-width: 766px;
   }
+  /* hero */
+  .hero {
+    height: 436px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet-2x.jpg);
+    }
+  }
 
+  .hero-title {
+    font-size: 54px;
+    width: 496px;
+  }
   /* Benefits */
   .benefits-item {
     width: 356px;
@@ -31,18 +58,22 @@
     flex-basis: calc((100% - 24px) / 2);
   }
   /* customers */
+  .customers-container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
   .customers-item {
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
   /* Footer  */
   .footer-container {
-    display: flex;
     flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 108px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
   .footer-info {
     text-align: left;

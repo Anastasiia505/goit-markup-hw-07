@@ -27,53 +27,69 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="header-logo logo link"
-            >Web<span>Studio</span></a
-          >
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link link current">Studio</a>
-            </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav> -->
+        <a href="./index.html" class="header-logo logo link"
+          >Web<span>Studio</span></a
+        >
+        <button type="button" class="header-btn-mobile">
+          <svg width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="header-nav-wrap">
+          <button type="button" class="header-btn-mobile">
+            <svg width="8" height="8">
+              <use href="./images/symbol-defs.svg#close-black-18dp-2-1-1"></use>
+            </svg>
+          </button>
+          <nav class="header-navigation">
+            <ul class="header-list list">
+              <li class="header-item">
+                <a href="./index.html" class="header-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-item">
+                <a href="./portfolio.html" class="header-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
 
-    <!-- address -->
-    <!-- <address class="adress">
-          <ul class="adress-list list">
-            <li class="adress-item">
-              <a href="mailto:info@devstudio.com" class="adress-link link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="adress-item">
-              <a href="tel:+110001111111" class="adress-link link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <!-- address -->
+          <address class="adress">
+            <ul class="adress-list list">
+              <li class="adress-item">
+                <a href="mailto:info@devstudio.com" class="adress-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="adress-item">
+                <a href="tel:+110001111111" class="adress-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Benefits -->
       <section class="benefits section">
@@ -139,6 +155,7 @@
           <ul class="work-list list">
             <li>
               <img
+                srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="Monitor"
                 width="360"
@@ -147,6 +164,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/phone-screen.jpg    1x,
+                  ./images/phone-screen-2x.jpg 2x
+                "
                 src="./images/phone-screen.jpg"
                 alt="Phone-screen"
                 width="360"
@@ -155,6 +176,7 @@
             </li>
             <li>
               <img
+                srcset="./images/telephone.jpg 1x, ./images/telephone-2x.jpg 2x"
                 src="./images/telephone.jpg"
                 alt="Telephone"
                 width="360"
@@ -172,6 +194,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero-2x.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Querrero"
                 width="264"
@@ -215,6 +241,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -258,6 +285,10 @@
 
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg 2x
+                "
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -301,6 +332,10 @@
 
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson-2x.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -347,7 +382,7 @@
 
       <!-- Customers -->
       <section class="customers section">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
