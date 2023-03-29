@@ -71,7 +71,9 @@
   /* adress */
   .adress-link {
     font-style: normal;
-    color: var(--text-color);
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,7 +85,7 @@
   /* hero */
   .hero {
     height: 436px;
-    max-width: 768px;
+
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -112,12 +114,25 @@
   .benefits-item {
     width: 356px;
   }
+
+  .benefits-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 24px;
+    row-gap: 72px;
   }
+  .benefits-title {
+    text-align: left;
+  }
+  .benefits-description {
+    font-weight: 400;
+  }
+
   /* Our Team */
   .team-container {
     padding-left: 108px;
@@ -129,10 +144,11 @@
     flex-direction: row;
     align-items: center;
     column-gap: 24px;
+    row-gap: 64px;
     flex-wrap: wrap;
   }
   .team-item {
-    margin-bottom: 64px;
+    margin-bottom: 0px;
     flex-basis: calc((100% - 24px) / 2);
   }
   /* customers */
@@ -159,8 +175,12 @@
   .footer-label {
     text-align: left;
   }
+
   .social-company-title {
     text-align: left;
+  }
+  .footer-input {
+    width: 264px;
   }
 
   .subscribe-wrapper {
