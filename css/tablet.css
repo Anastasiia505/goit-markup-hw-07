@@ -171,4 +171,18 @@
   .modal {
     width: 408px;
   }
+  /* portfolio */
+  .portfolio-list-btn {
+    justify-content: center;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }

@@ -109,4 +109,11 @@
   .footer-form {
     margin-left: 80px;
   }
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
 }
