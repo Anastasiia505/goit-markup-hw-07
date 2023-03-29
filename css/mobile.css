@@ -2,4 +2,12 @@
   .container {
     max-width: 426px;
   }
+  .hero-title {
+    font-size: 36px;
+    width: 320px;
+    margin: 0 auto 48px auto;
+  }
+  .modal {
+    width: 392px;
+  }
 }

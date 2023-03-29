@@ -3,6 +3,13 @@
     max-width: 1158px;
   }
   /* Header */
+  .adress-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .adress-item:not(:last-child) {
+    margin-right: 40px;
+  }
 
   /* Hero */
   .hero {

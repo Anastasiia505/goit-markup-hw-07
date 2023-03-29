@@ -140,6 +140,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  display: flex;
   width: 100%;
   height: 100%;
   top: 0;
@@ -204,6 +205,12 @@ body {
   font-size: 20px;
   color: #434455;
 }
+.menu-mobile-adress-item {
+  margin-top: 40px;
+}
+.mobile-menu-contacts .company-social-list {
+  margin-top: 48px;
+}
 
 /*--------------- Hero-------------- */
 .hero {
@@ -235,11 +242,11 @@ body {
   }
 }
 .hero-title {
-  font-size: 36px;
+  font-size: 33px;
   line-height: 1.07;
   color: var(--secondary-color);
-  width: 320px;
-  margin: 0 auto 48px auto;
+  width: 300px;
+  margin: 0 auto 36px auto;
 }
 
 .hero-btn {
@@ -597,7 +604,7 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 408px;
+  width: 300px;
   height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -609,6 +616,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 90vh;
+  overflow-y: scroll;
 }
 .modal-close {
   position: absolute;
