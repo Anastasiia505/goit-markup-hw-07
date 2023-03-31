@@ -326,6 +326,8 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .team-social-item {
   background-color: var(--primary-brand-color);
