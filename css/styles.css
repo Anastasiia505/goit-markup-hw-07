@@ -539,21 +539,18 @@ body {
   justify-content: flex-start;
   row-gap: 16px;
   margin-bottom: 72px;
-}
-.portfolio-item-btn:not(:last-child) {
-  margin-right: 24px;
+  column-gap: 24px;
 }
 
 .portfolio-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   row-gap: 48px;
 }
-.portfolio-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-}
+
 .portfolio-item-link {
-  display: inline-block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
